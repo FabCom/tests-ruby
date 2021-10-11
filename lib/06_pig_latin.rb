@@ -21,11 +21,7 @@ def examine_each_word(word)
              end
     end
   end
-  if oldword == oldword.capitalize
-    word.capitalize
-  else
-    word
-  end
+  oldword == oldword.capitalize ? word.capitalize : word
 end
 
 def translate(s)
